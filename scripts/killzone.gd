@@ -5,7 +5,7 @@ extends Area2D
 func _on_body_entered(body):
 	print("You died!")
 	Engine.time_scale = 0.5
-	body.get_node("CollionsonShape2D").queue_free()
+	body.get_node("CollisionShape2D").queue_free()
 	timer.start()
 
 
